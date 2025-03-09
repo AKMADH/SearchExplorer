@@ -16,7 +16,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "launchUrl": "swagger" // 🔹 Ensures Swagger opens by default
+      "launchUrl": "swagger" 
     }
   }
 }

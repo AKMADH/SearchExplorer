@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Rc+wI4GIDn5uXXffwfalvz5FgrFczn5+pXS7eXAKV4E=",
+  "Source": "SearchExplorer.Api",
+  "BasePath": "_content/SearchExplorer.Api",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
