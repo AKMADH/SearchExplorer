@@ -1,0 +1,13 @@
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Core\bin\Debug\net8.0\SearchExplorer.Core.deps.json
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Core\bin\Debug\net8.0\SearchExplorer.Core.dll
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Core\bin\Debug\net8.0\SearchExplorer.Core.pdb
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Core\obj\Debug\net8.0\SearchExplorer.Core.csproj.AssemblyReference.cache
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Core\obj\Debug\net8.0\SearchExplorer.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Core\obj\Debug\net8.0\SearchExplorer.Core.AssemblyInfoInputs.cache
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Core\obj\Debug\net8.0\SearchExplorer.Core.AssemblyInfo.cs
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Core\obj\Debug\net8.0\SearchExplorer.Core.csproj.CoreCompileInputs.cache
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Core\obj\Debug\net8.0\SearchExplorer.Core.sourcelink.json
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Core\obj\Debug\net8.0\SearchExplorer.Core.dll
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Core\obj\Debug\net8.0\refint\SearchExplorer.Core.dll
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Core\obj\Debug\net8.0\SearchExplorer.Core.pdb
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Core\obj\Debug\net8.0\ref\SearchExplorer.Core.dll

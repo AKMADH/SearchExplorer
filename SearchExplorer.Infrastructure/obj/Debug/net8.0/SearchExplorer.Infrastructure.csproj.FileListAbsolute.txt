@@ -1,0 +1,16 @@
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Infrastructure\obj\Debug\net8.0\SearchExplorer.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Infrastructure\obj\Debug\net8.0\SearchExplorer.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Infrastructure\obj\Debug\net8.0\SearchExplorer.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Infrastructure\obj\Debug\net8.0\SearchExplorer.Infrastructure.AssemblyInfo.cs
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Infrastructure\obj\Debug\net8.0\SearchExplorer.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Infrastructure\obj\Debug\net8.0\SearchExplorer.Infrastructure.sourcelink.json
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Infrastructure\bin\Debug\net8.0\SearchExplorer.Infrastructure.deps.json
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Infrastructure\bin\Debug\net8.0\SearchExplorer.Infrastructure.dll
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Infrastructure\bin\Debug\net8.0\SearchExplorer.Infrastructure.pdb
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Infrastructure\bin\Debug\net8.0\SearchExplorer.Core.dll
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Infrastructure\bin\Debug\net8.0\SearchExplorer.Core.pdb
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Infrastructure\obj\Debug\net8.0\SearchEx.7DE1B37C.Up2Date
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Infrastructure\obj\Debug\net8.0\SearchExplorer.Infrastructure.dll
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Infrastructure\obj\Debug\net8.0\refint\SearchExplorer.Infrastructure.dll
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Infrastructure\obj\Debug\net8.0\SearchExplorer.Infrastructure.pdb
+C:\Users\anish.mishra\source\Workspaces\Workspace\SearchExplorer\SearchExplorer.Infrastructure\obj\Debug\net8.0\ref\SearchExplorer.Infrastructure.dll

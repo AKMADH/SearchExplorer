@@ -1,6 +1,0 @@
-@SearchExplorer_HostAddress = http://localhost:5082
-
-GET {{SearchExplorer_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
