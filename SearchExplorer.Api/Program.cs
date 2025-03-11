@@ -16,6 +16,7 @@ using SearchExplorer.Core.Entities;
 using SearchExplorer.Infrastructure.Repositories;
 using Serilog;
 using System.Text;
+using SearchExplorer.Api.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 

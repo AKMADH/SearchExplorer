@@ -6,6 +6,7 @@ using SearchExplorer.Core.Entities;
 
 namespace SearchExplorer.Api.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class ProductController : ControllerBase
