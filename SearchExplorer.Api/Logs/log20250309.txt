@@ -89,3 +89,62 @@
 2025-03-09 15:45:16.157 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
 2025-03-09 15:50:36.952 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
 2025-03-09 15:51:19.878 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-09 22:20:49.899 +04:00 [INF] User profile is available. Using '/Users/anishkumarmishra/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-09 22:20:50.098 +04:00 [INF] Now listening on: https://localhost:5001
+2025-03-09 22:20:50.098 +04:00 [INF] Now listening on: http://localhost:5000
+2025-03-09 22:20:50.100 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-09 22:20:50.100 +04:00 [INF] Hosting environment: Development
+2025-03-09 22:20:50.100 +04:00 [INF] Content root path: /Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Api
+2025-03-09 22:20:59.075 +04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - null null
+2025-03-09 22:20:59.125 +04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 50.53ms
+2025-03-09 22:20:59.139 +04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.js - null null
+2025-03-09 22:20:59.142 +04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.js - 200 null application/javascript;charset=utf-8 2.9585ms
+2025-03-09 22:20:59.315 +04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - null null
+2025-03-09 22:20:59.368 +04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 53.8791ms
+2025-03-09 22:24:48.556 +04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/ - null null
+2025-03-09 22:24:48.560 +04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/ - 301 0 null 3.9727ms
+2025-03-09 22:24:48.564 +04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - null null
+2025-03-09 22:24:48.565 +04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 1.4298ms
+2025-03-09 22:24:48.576 +04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - null null
+2025-03-09 22:24:48.580 +04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - null null
+2025-03-09 22:24:48.580 +04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.css - null null
+2025-03-09 22:24:48.580 +04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - null null
+2025-03-09 22:24:48.580 +04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.js - null null
+2025-03-09 22:24:48.581 +04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.js - 200 null application/javascript;charset=utf-8 0.9956ms
+2025-03-09 22:24:48.591 +04:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-03-09 22:24:48.591 +04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.css - 200 202 text/css 11.4981ms
+2025-03-09 22:24:48.596 +04:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-03-09 22:24:48.596 +04:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-03-09 22:24:48.597 +04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 17.0772ms
+2025-03-09 22:24:48.597 +04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - 200 154948 text/css 21.536ms
+2025-03-09 22:24:48.602 +04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-03-09 22:24:48.602 +04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - 200 1466324 text/javascript 21.8285ms
+2025-03-09 22:24:48.670 +04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - null null
+2025-03-09 22:24:48.676 +04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.483ms
+2025-03-09 22:24:48.678 +04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - null null
+2025-03-09 22:24:48.678 +04:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-03-09 22:24:48.678 +04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - 200 628 image/png 0.2205ms
+2025-03-09 22:26:20.836 +04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Product/search?Keyword=elect - null null
+2025-03-09 22:26:20.845 +04:00 [INF] [2025-03-09 18:26:20] Incoming request: GET /api/Product/search
+2025-03-09 22:26:20.882 +04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-09 22:26:20.883 +04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-03-09 22:26:20.884 +04:00 [INF] [2025-03-09 18:26:20] Outgoing response: 401
+2025-03-09 22:26:20.884 +04:00 [INF] [2025-03-09 18:26:20] Response Body: 
+2025-03-09 22:26:20.884 +04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Product/search?Keyword=elect - 401 0 null 48.4769ms
+2025-03-09 22:27:37.057 +04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Product/search?Keyword=laptop&MinPrice=45000&MaxPrice=80000 - null null
+2025-03-09 22:27:37.059 +04:00 [INF] [2025-03-09 18:27:37] Incoming request: GET /api/Product/search
+2025-03-09 22:27:37.062 +04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-09 22:27:37.063 +04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-03-09 22:27:37.063 +04:00 [INF] [2025-03-09 18:27:37] Outgoing response: 401
+2025-03-09 22:27:37.063 +04:00 [INF] [2025-03-09 18:27:37] Response Body: 
+2025-03-09 22:27:37.063 +04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Product/search?Keyword=laptop&MinPrice=45000&MaxPrice=80000 - 401 0 null 5.6882ms
+2025-03-09 22:28:23.545 +04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Product/search?Keyword=laptop&MinPrice=45000&MaxPrice=80000&SortBy=price&SortDirection=desc - null null
+2025-03-09 22:28:23.548 +04:00 [INF] [2025-03-09 18:28:23] Incoming request: GET /api/Product/search
+2025-03-09 22:28:23.552 +04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-09 22:28:23.552 +04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-03-09 22:28:23.552 +04:00 [INF] [2025-03-09 18:28:23] Outgoing response: 401
+2025-03-09 22:28:23.553 +04:00 [INF] [2025-03-09 18:28:23] Response Body: 
+2025-03-09 22:28:23.553 +04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Product/search?Keyword=laptop&MinPrice=45000&MaxPrice=80000&SortBy=price&SortDirection=desc - 401 0 null 7.9908ms

@@ -1,132 +1,32 @@
-﻿using Core.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using SearchExplorer.Core.Entities;
 using SearchExplorer.Core.Interfaces;
-using SearchExplorer.Core.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SearchExplorer.Infrastructure.Data
+namespace SearchExplorer.Infrastructure.Repositories
 {
     public class ProductRepository : IProductRepository
     {
-        private readonly ApplicationDbContext _context;
+        private readonly List<Product> _products;
 
-        public ProductRepository(ApplicationDbContext context) => _context = context;
-
-        public async Task<ProductSearchResponse> SearchProductsAsync(ProductSearchQuery query)
+        public ProductRepository()
         {
-            var products = _context.Products.AsQueryable();
-
-            // Filtering
-            if (!string.IsNullOrEmpty(query.Keyword))
-                products = products.Where(p => p.Name.Contains(query.Keyword) || p.Description.Contains(query.Keyword));
-
-            if (query.MinPrice.HasValue)
-                products = products.Where(p => p.Price >= query.MinPrice.Value);
-
-            if (query.MaxPrice.HasValue)
-                products = products.Where(p => p.Price <= query.MaxPrice.Value);
-
-            // Sorting
-            if (!string.IsNullOrEmpty(query.SortBy))
+            _products = new List<Product>
             {
-                if (query.SortBy.Equals("Price", System.StringComparison.OrdinalIgnoreCase))
-                {
-                    products = query.SortDirection == "desc" ? products.OrderByDescending(p => p.Price) : products.OrderBy(p => p.Price);
-                }
-                else if (query.SortBy.Equals("Name", System.StringComparison.OrdinalIgnoreCase))
-                {
-                    products = query.SortDirection == "desc" ? products.OrderByDescending(p => p.Name) : products.OrderBy(p => p.Name);
-                }
-            }
+                new Product { ProductId = 1, Name = "Laptop", Brand = "BrandA", Category = "Electronics", Price = 1000m, Rating = 4.5m, StockQuantity = 10, Description = "High performance laptop" },
+                new Product { ProductId = 2, Name = "Smartphone", Brand = "BrandB", Category = "Electronics", Price = 700m, Rating = 4.2m, StockQuantity = 15, Description = "Latest model smartphone" },
+                new Product { ProductId = 3, Name = "Shoes", Brand = "BrandC", Category = "Footwear", Price = 50m, Rating = 3.8m, StockQuantity = 20, Description = "Comfortable running shoes" },
+                new Product { ProductId = 4, Name = "Washing Machine", Brand = "BrandA", Category = "Appliances", Price = 450m, Rating = 4.0m, StockQuantity = 5, Description = "Energy-efficient washing machine" },
+                new Product { ProductId = 5, Name = "Headphones", Brand = "BrandB", Category = "Electronics", Price = 120m, Rating = 4.7m, StockQuantity = 30, Description = "Noise-canceling headphones" }
+            };
+        }
 
-            // Total Count Before Pagination
-            int totalCount = await products.CountAsync();
-            var productList = await products.ToListAsync();
-            // Return response
-            return new ProductSearchResponse(productList, totalCount);
+
+        // Get all products (In-memory data fetch)
+        public Task<List<Product>> GetAllProductsAsync()
+        {
+            return Task.FromResult(_products);
         }
     }
 }
-
-
-
-//using Core.Entities;
-//using Microsoft.EntityFrameworkCore;
-//using SearchExplorer.Core.Interfaces;
-//using SearchExplorer.Core.Models;
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Threading.Tasks;
-
-//namespace SearchExplorer.Infrastructure.Data
-//{
-//    public class ProductRepository : IProductRepository
-//    {
-//        private readonly List<Product> _products;
-
-//        // Simulate some in-memory products
-//        public ProductRepository()
-//        {
-//            _products = new List<Product>
-//            {
-//                new Product { ProductId = 1, Name = "Laptop", Price = 1000, Stock = 10, Description = "A powerful laptop", Category = "Electronics" },
-//                new Product { ProductId = 2, Name = "Phone", Price = 500, Stock = 20, Description = "A smartphone", Category = "Electronics" },
-//                new Product { ProductId = 3, Name = "T-shirt", Price = 20, Stock = 100, Description = "Comfortable cotton t-shirt", Category = "Apparel" },
-//                new Product { ProductId = 4, Name = "Headphones", Price = 150, Stock = 50, Description = "Noise-canceling headphones", Category = "Electronics" },
-//                new Product { ProductId = 5, Name = "Shoes", Price = 60, Stock = 75, Description = "Running shoes", Category = "Apparel" }
-//            };
-//        }
-
-//        public async Task<ProductSearchResponse> SearchProductsAsync(ProductSearchQuery query)
-//        {
-//            var products = _products.AsQueryable();
-
-//            if (!string.IsNullOrEmpty(query.Keyword))
-//            {
-//                // Convert both the product name and description to lower case for case-insensitive comparison
-//                var lowerKeyword = query.Keyword.ToLower();
-
-//                products = products.Where(p => p.Name.ToLower().Contains(lowerKeyword) || p.Description.ToLower().Contains(lowerKeyword));
-//            }
-
-//            if (query.MinPrice.HasValue)
-//                products = products.Where(p => p.Price >= query.MinPrice.Value);
-
-//            if (query.MaxPrice.HasValue)
-//                products = products.Where(p => p.Price <= query.MaxPrice.Value);
-
-//            if (!string.IsNullOrEmpty(query.SortBy))
-//            {
-//                if (query.SortBy == "Price")
-//                {
-//                    products = query.SortDirection == "desc"
-//                        ? products.OrderByDescending(p => p.Price)
-//                        : products.OrderBy(p => p.Price);
-//                }
-//                else if (query.SortBy == "Name")
-//                {
-//                    products = query.SortDirection == "desc"
-//                        ? products.OrderByDescending(p => p.Name)
-//                        : products.OrderBy(p => p.Name);
-//                }
-//            }
-
-//            // Create and return the response with the filtered products and total count
-//            var response = new ProductSearchResponse(
-//                products.ToList(),       // Passing the filtered products
-//                products.Count()         // Passing the total count of products
-//            );
-
-//            return response;
-//        }
-
-
-
-
-
-
-//    }
-//}

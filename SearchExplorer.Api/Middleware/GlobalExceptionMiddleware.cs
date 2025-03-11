@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 using System.Net;
 using System.Text.Json;
 
-namespace SearchExplorer.Infrastructure.Middleware
+namespace SearchExplorer.Api.Middleware
 {
     public class ExceptionHandlingMiddleware
     {

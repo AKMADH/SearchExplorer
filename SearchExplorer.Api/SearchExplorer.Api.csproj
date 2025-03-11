@@ -22,8 +22,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SearchExplorer.Application\SearchExplorer.Application.csproj" />
-    <ProjectReference Include="..\SearchExplorer.Core\SearchExplorer.Core.csproj" />
     <ProjectReference Include="..\SearchExplorer.Infrastructure\SearchExplorer.Infrastructure.csproj" />
+    <ProjectReference Include="..\SearchExplorer.Core\SearchExplorer.Core.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,7 +4,7 @@ using System.IO;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-namespace SearchExplorer.Infrastructure.Middleware
+namespace SearchExplorer.Api.Middleware
 {
     public class RequestResponseLoggingMiddleware
     {

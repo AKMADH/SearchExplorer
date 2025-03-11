@@ -1,4 +1,4 @@
-﻿using Core.Interfaces;
+﻿
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -6,16 +6,20 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using SearchExplorer.Application.Commands;
 using SearchExplorer.Application.Handlers;
-using SearchExplorer.Application.Services;
 using SearchExplorer.Core.Interfaces;
 using SearchExplorer.Infrastructure;
-using SearchExplorer.Infrastructure.Data;
-using SearchExplorer.Infrastructure.Middleware;
+using SearchExplorer.Api.Middleware;
+using SearchExplorer.Infrastructure;
+using SearchExplorer.Application.Services;
+using SearchExplorer.Core.Interfaces;
+using SearchExplorer.Core.Entities;
+using SearchExplorer.Infrastructure.Repositories;
 using Serilog;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Setup logging
 var logDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Logs");
 builder.Services.AddHttpClient();
 builder.Services.AddHttpContextAccessor();
@@ -38,22 +42,26 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
 builder.Logging.AddSerilog();  
+
+// JWT settings
 var jwtSettings = builder.Configuration.GetSection("Jwt");
 var secretKey = Encoding.UTF8.GetBytes(jwtSettings["SecretKey"]);
+
+// Register MediatR
 builder.Services.AddMediatR(options =>
 {
-    options.RegisterServicesFromAssemblies(typeof(ProductSearchQueryHandler).Assembly);
-});
-builder.Services.AddMediatR(options =>
-{
-    options.RegisterServicesFromAssemblies(typeof(LoginCommand).Assembly);
+    options.RegisterServicesFromAssemblies(
+        typeof(ProductSearchHandler).Assembly,
+        typeof(LoginCommand).Assembly // Register from both assemblies in one call
+    );
 });
 
 // Register the repository
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddSingleton<JwtTokenGenerator>();
 
-
-
+// Authentication setup
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -71,78 +79,33 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-//builder.Services.AddSwaggerGen(options =>
-//{
-//    options.SwaggerDoc("v1", new OpenApiInfo
-//    {
-//        Title = "Search Explorer API",
-//        Version = "v1",
-//        Description = "API for searching products in Search Explorer.",
-//        Contact = new OpenApiContact
-//        {
-//            Name = "Your Name",
-//            Email = "your.email@example.com",
-//            Url = new Uri("https://yourwebsite.com")
-//        }
-//    });
-
-//    // Add JWT Authentication to Swagger UI
-//    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-//    {
-//        Name = "Authorization",
-//        Type = SecuritySchemeType.Http,
-//        Scheme = "Bearer",
-//        BearerFormat = "JWT",
-//        In = ParameterLocation.Header,
-//        Description = "Enter 'Bearer' [space] and then your token in the text input below."
-//    });
-
-//    options.AddSecurityRequirement(new OpenApiSecurityRequirement
-//    {
-//        {
-//            new OpenApiSecurityScheme
-//            {
-//                Reference = new OpenApiReference
-//                {
-//                    Type = ReferenceType.SecurityScheme,
-//                    Id = "Bearer"
-//                }
-//            },
-//            new string[] {}
-//        }
-//    });
-//});
-
+// Swagger setup
 builder.Services.AddSwaggerGen(options =>
 {
-    options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    options.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "Mohre API",
+        Title = "Search Explorer API",
         Version = "v1",
-        Description = "API for generating and retrieving access tokens"
+        Description = "API for SearchExplorer"
     });
 });
-// Register the IAuthService with its implementation (AuthService)
-builder.Services.AddScoped<IAuthService, AuthService>();
-builder.Services.AddSingleton<JwtTokenGenerator>();
-builder.Services.AddScoped<IProductRepository,ProductRepository>();
-builder.Services.AddScoped<IProductService, ProductService>();
 
+// Register controllers
 builder.Services.AddControllers();
 
 var app = builder.Build();  // This is where the application is actually built.
 app.UseSwagger();
 
-// Now you can configure the middleware pipeline
+// Configure Swagger UI
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Search Explorer API v1");
     c.RoutePrefix = "swagger";
 });
 
-// Configure additional middleware (should be done after app.Build())
-app.UseMiddleware<RequestResponseLoggingMiddleware>();
-app.UseMiddleware<GlobalExceptionMiddleware>();
+// Configure middleware pipeline
+app.UseMiddleware<RequestResponseLoggingMiddleware>(); // Enable request/response logging
+// app.UseMiddleware<GlobalExceptionMiddleware>(); // Uncomment if you want global exception handling
 app.UseHttpsRedirection();
 
 app.UseAuthentication(); // Ensure Authentication Middleware is added

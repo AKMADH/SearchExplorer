@@ -1,4 +1,4 @@
-﻿using Core.Entities;
+﻿using SearchExplorer.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace SearchExplorer.Infrastructure
