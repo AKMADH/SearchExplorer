@@ -14,11 +14,11 @@ namespace SearchExplorer.Infrastructure.Repositories
         {
             _products = new List<Product>
             {
-                new Product { ProductId = 1, Name = "Laptop", Brand = "BrandA", Category = "Electronics", Price = 1000m, Rating = 4.5m, StockQuantity = 10, Description = "High performance laptop" },
-                new Product { ProductId = 2, Name = "Smartphone", Brand = "BrandB", Category = "Electronics", Price = 700m, Rating = 4.2m, StockQuantity = 15, Description = "Latest model smartphone" },
-                new Product { ProductId = 3, Name = "Shoes", Brand = "BrandC", Category = "Footwear", Price = 50m, Rating = 3.8m, StockQuantity = 20, Description = "Comfortable running shoes" },
-                new Product { ProductId = 4, Name = "Washing Machine", Brand = "BrandA", Category = "Appliances", Price = 450m, Rating = 4.0m, StockQuantity = 5, Description = "Energy-efficient washing machine" },
-                new Product { ProductId = 5, Name = "Headphones", Brand = "BrandB", Category = "Electronics", Price = 120m, Rating = 4.7m, StockQuantity = 30, Description = "Noise-canceling headphones" }
+                new Product { ProductId = 1, Name = "Laptop", Brand = "Apple", Category = "Electronics", Price = 1000m, Rating = 4.5m, StockQuantity = 10, Description = "High performance laptop" },
+                 new Product { ProductId = 2, Name = "Smartphone", Brand = "Iwatch", Category = "Electronics", Price = 700m, Rating = 4.2m, StockQuantity = 15, Description = "Latest model smartphone" },
+                 new Product { ProductId = 3, Name = "Shoes", Brand = "Addidas", Category = "Footwear", Price = 50m, Rating = 3.8m, StockQuantity = 20, Description = "Comfortable running shoes" },
+                 new Product { ProductId = 4, Name = "Washing Machine", Brand = "Philips", Category = "Appliances", Price = 450m, Rating = 4.0m, StockQuantity = 5, Description = "Energy-efficient washing machine" },
+                 new Product { ProductId = 5, Name = "Headphones", Brand = "Sony", Category = "Electronics", Price = 120m, Rating = 4.7m, StockQuantity = 30, Description = "Noise-canceling headphones" }
             };
         }
 
