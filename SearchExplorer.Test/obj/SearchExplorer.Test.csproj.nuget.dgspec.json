@@ -1,39 +1,48 @@
 {
   "format": 1,
   "restore": {
-    "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Test/SearchExplorer.Test.csproj": {}
+    "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Test\\SearchExplorer.Test.csproj": {}
   },
   "projects": {
-    "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Api/SearchExplorer.Api.csproj": {
+    "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Api\\SearchExplorer.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Api/SearchExplorer.Api.csproj",
+        "projectUniqueName": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Api\\SearchExplorer.Api.csproj",
         "projectName": "SearchExplorer.Api",
-        "projectPath": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Api/SearchExplorer.Api.csproj",
-        "packagesPath": "/Users/anishkumarmishra/.nuget/packages/",
-        "outputPath": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Api/obj/",
+        "projectPath": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Api\\SearchExplorer.Api.csproj",
+        "packagesPath": "C:\\Users\\anish.mishra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/anishkumarmishra/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\anish.mishra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Application/SearchExplorer.Application.csproj": {
-                "projectPath": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Application/SearchExplorer.Application.csproj"
+              "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Application\\SearchExplorer.Application.csproj": {
+                "projectPath": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Application\\SearchExplorer.Application.csproj"
               },
-              "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Core/SearchExplorer.Core.csproj": {
-                "projectPath": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Core/SearchExplorer.Core.csproj"
+              "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Core\\SearchExplorer.Core.csproj": {
+                "projectPath": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Core\\SearchExplorer.Core.csproj"
               },
-              "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Infrastructure/SearchExplorer.Infrastructure.csproj": {
-                "projectPath": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Infrastructure/SearchExplorer.Infrastructure.csproj"
+              "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Infrastructure\\SearchExplorer.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Infrastructure\\SearchExplorer.Infrastructure.csproj"
               }
             }
           }
@@ -46,7 +55,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
         "SdkAnalysisLevel": "9.0.200"
       },
@@ -100,20 +109,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-arm64",
-              "version": "[8.0.13, 8.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -122,37 +117,46 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200-preview.0.24575.35/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Application/SearchExplorer.Application.csproj": {
+    "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Application\\SearchExplorer.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Application/SearchExplorer.Application.csproj",
+        "projectUniqueName": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Application\\SearchExplorer.Application.csproj",
         "projectName": "SearchExplorer.Application",
-        "projectPath": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Application/SearchExplorer.Application.csproj",
-        "packagesPath": "/Users/anishkumarmishra/.nuget/packages/",
-        "outputPath": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Application/obj/",
+        "projectPath": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Application\\SearchExplorer.Application.csproj",
+        "packagesPath": "C:\\Users\\anish.mishra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/anishkumarmishra/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\anish.mishra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Core/SearchExplorer.Core.csproj": {
-                "projectPath": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Core/SearchExplorer.Core.csproj"
+              "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Core\\SearchExplorer.Core.csproj": {
+                "projectPath": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Core\\SearchExplorer.Core.csproj"
               },
-              "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Infrastructure/SearchExplorer.Infrastructure.csproj": {
-                "projectPath": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Infrastructure/SearchExplorer.Infrastructure.csproj"
+              "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Infrastructure\\SearchExplorer.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Infrastructure\\SearchExplorer.Infrastructure.csproj"
               }
             }
           }
@@ -165,7 +169,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
         "SdkAnalysisLevel": "9.0.200"
       },
@@ -205,41 +209,40 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200-preview.0.24575.35/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Core/SearchExplorer.Core.csproj": {
+    "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Core\\SearchExplorer.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Core/SearchExplorer.Core.csproj",
+        "projectUniqueName": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Core\\SearchExplorer.Core.csproj",
         "projectName": "SearchExplorer.Core",
-        "projectPath": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Core/SearchExplorer.Core.csproj",
-        "packagesPath": "/Users/anishkumarmishra/.nuget/packages/",
-        "outputPath": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Core/obj/",
+        "projectPath": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Core\\SearchExplorer.Core.csproj",
+        "packagesPath": "C:\\Users\\anish.mishra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/anishkumarmishra/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\anish.mishra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -256,7 +259,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
         "SdkAnalysisLevel": "9.0.200"
       },
@@ -292,49 +295,48 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200-preview.0.24575.35/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Infrastructure/SearchExplorer.Infrastructure.csproj": {
+    "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Infrastructure\\SearchExplorer.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Infrastructure/SearchExplorer.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Infrastructure\\SearchExplorer.Infrastructure.csproj",
         "projectName": "SearchExplorer.Infrastructure",
-        "projectPath": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Infrastructure/SearchExplorer.Infrastructure.csproj",
-        "packagesPath": "/Users/anishkumarmishra/.nuget/packages/",
-        "outputPath": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Infrastructure/obj/",
+        "projectPath": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Infrastructure\\SearchExplorer.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\anish.mishra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/anishkumarmishra/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\anish.mishra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Core/SearchExplorer.Core.csproj": {
-                "projectPath": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Core/SearchExplorer.Core.csproj"
+              "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Core\\SearchExplorer.Core.csproj": {
+                "projectPath": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Core\\SearchExplorer.Core.csproj"
               }
             }
           }
@@ -347,7 +349,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
         "SdkAnalysisLevel": "9.0.200"
       },
@@ -415,49 +417,48 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200-preview.0.24575.35/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Test/SearchExplorer.Test.csproj": {
+    "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Test\\SearchExplorer.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Test/SearchExplorer.Test.csproj",
+        "projectUniqueName": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Test\\SearchExplorer.Test.csproj",
         "projectName": "SearchExplorer.Test",
-        "projectPath": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Test/SearchExplorer.Test.csproj",
-        "packagesPath": "/Users/anishkumarmishra/.nuget/packages/",
-        "outputPath": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Test/obj/",
+        "projectPath": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Test\\SearchExplorer.Test.csproj",
+        "packagesPath": "C:\\Users\\anish.mishra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Test\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/anishkumarmishra/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\anish.mishra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Api/SearchExplorer.Api.csproj": {
-                "projectPath": "/Users/anishkumarmishra/Downloads/SearchExplorer/SearchExplorer.Api/SearchExplorer.Api.csproj"
+              "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Api\\SearchExplorer.Api.csproj": {
+                "projectPath": "C:\\Users\\anish.mishra\\source\\Workspaces\\Workspace\\SearchExplorer-DSA\\SearchExplorer.Api\\SearchExplorer.Api.csproj"
               }
             }
           }
@@ -470,7 +471,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
         "SdkAnalysisLevel": "9.0.200"
       },
@@ -518,22 +519,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200-preview.0.24575.35/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
