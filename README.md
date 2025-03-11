@@ -92,29 +92,100 @@ Search for Products by Keyword
 
 GET https://localhost:5001/api/Product/search?Keyword=laptop
 
-Filter Products by Price Range
-
-GET https://localhost:5001/api/Product/search?Keyword=laptop&MinPrice=45000&MaxPrice=80000
-
-Sort Products
-
-GET [/api/product/sort?order=asc](https://localhost:5001/api/Product/search?Keyword=laptop&MinPrice=45000&MaxPrice=80000&SortBy=price&SortDirection=desc)
+Filter Products 
+sort product 
 
 # Architecture & Design Patterns
 
 MediatR: Handles requests via command and query handlers.
 
-Repository Pattern: Provides abstraction for database access.
+Repository Pattern: Provides abstraction for database access i usedIn memory .
 
 Middleware: Logs all incoming requests and outgoing responses.
 
 Command Handler & Service Layer: Ensures separation of concerns.
 
-Logging
 
-The API includes middleware to log each request and response. Logs are stored in the configured logging provider.
-<img width="1470" alt="Screenshot 2025-03-09 at 10 25 48 PM" src="https://github.com/user-attachments/assets/1dde5f70-d50a-424c-b3f4-4d6cc97b5708" />
+# Endpoints
+# 1. Authentication
+POST /api/auth/login
+Authenticate a user by sending their username and password as JSON in the request body.
+
+# Request Body:
+
+username: string (nullable)
+password: string (nullable)
+Responses:
+
+200 OK: Authentication was successful.
+Request Example:
+# json
+
+{
+  "username": "testuser",
+  "password": "password123"
+}
+# Response Example (200 OK):
+json
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGVzdHVzZXIiLCJqdGkiOiI1MjUzMGRhYS04YWNlLTQyYTQtOGRhOS01NjJhN2M5NTEzMGQiLCJleHAiOjE3NDE2ODU3NjUsImlzcyI6InlvdXJfaXNzdWVyX2hlcmUiLCJhdWQiOiJ5b3VyX2F1ZGllbmNlX2hlcmUifQ.eV0uFNVV40sNowktrNIhYzNWas86M--sEfYE0RD9Umk"
+}
+# 2. Product Search
+GET /api/Product/search
+Search for products by providing search parameters as query parameters.
+
+Query Parameters:
+
+query: string (optional) — The search term for the product.
+filter: integer (optional) — Filter for product type. This is an enumerated value:
+0: Filter Type 0
+1: Filter Type 1
+2: Filter Type 2
+3: Filter Type 3
+public enum ProductFilterEnum
+{
+    Brand,
+    Rating,
+    Category,
+    Price
+}
+
+filterValue: string (optional) — The value for the filter.
+sort: integer (optional) — Sort order. This is an enumerated value:
+0: Sort Type 0
+1: Sort Type 1
+2: Sort Type 2
+
+public enum ProductSortEnum
+{
+    Name, 0
+    Price, 1
+    Rating 2
+}
+Responses:
+{
+  "statusCode": 200,
+  "message": "Product details fetched successfully.",
+  "data": {
+    "products": [
+      {
+        "productId": 1,
+        "name": "Laptop",
+        "price": 1000,
+        "stockQuantity": 10,
+        "description": "High performance laptop",
+        "category": "Electronics",
+        "brand": "BrandA",
+        "rating": 4.5
+      }
+    ],
+    "totalCount": 1
+  }
+}
+200 OK: A list of products matching the search criteria.
+
+#The API includes middleware to log each request and response. Logs are stored in the configured logging provider.
 
 
-
+![image](https://github.com/user-attachments/assets/5c571c51-b23f-434e-9cf0-003ba3147a7b)
 
