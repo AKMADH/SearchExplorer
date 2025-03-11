@@ -3,6 +3,7 @@ using MediatR;
 using SearchExplorer.Application.Queries;
 using SearchExplorer.Core.Models;
 using SearchExplorer.Core.Entities;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SearchExplorer.Api.Controllers
 {
