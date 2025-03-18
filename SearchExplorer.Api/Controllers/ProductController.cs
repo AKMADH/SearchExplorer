@@ -26,6 +26,16 @@ namespace SearchExplorer.Api.Controllers
             [FromQuery] string? filterValue = null,
             [FromQuery] ProductSortEnum? sort = null)
         {
+
+            if (string.IsNullOrWhiteSpace(query))
+            {
+                var result = new ApiResponse<ProductSearchResponse>(
+                    Core.Enums.StatusCode.BadRequest,
+                    "Invalid search query.",
+                    null
+                );
+                return BadRequest(result);
+            }
             // Create the query object to pass to the mediator
             var productSearchQuery = new ProductSearchQuery(query, filter, filterValue, sort);
 
